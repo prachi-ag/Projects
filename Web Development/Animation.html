@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+   body{
+     margin:0px;
+   }
+   .para{
+     background-image:linear-gradient(to top right,black,grey);
+     border-radius: 25px;
+     border: 2px red solid;
+     color: white;
+     padding: 60px;
+     width: 300px;
+     margin-left: 400px;
+     margin-top: 200px;
+     font-size: 40px;
+     text-align: center;
+     position: relative;
+   }
+
+   @keyframes bouncing{
+     0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+     100%{ bottom: 100px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+   }
+
+   .para{ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;}
+
+   .hi{
+     padding: 20px;
+     background: red;
+     color: white;
+     position: relative;
+     font-size: 18px;
+     width: 55px;
+   }
+   @keyframes rotate {
+     0%{left: 0px; top:0px;}
+     25%{left: 1200px; top:0; }
+     50%{left:1200px; top:150px;}
+     75%{left:0px; top:150px;}
+     100%{left:0; top:0;}
+   }
+   .hi{animation: rotate 6s infinite both;}
+  </style>
+</head>
+<body>
+
+  <p class="para">Enjoying!!!</p>
+    <p class="hi">Hello!!</p>
+
+</body>
+</html>

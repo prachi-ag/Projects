@@ -1,0 +1,94 @@
+body{
+  background: #ccc;
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+.container{
+  margin:auto;
+  width: 80%;
+}
+#main-header{
+  background-image:url('images/design.jpg');
+  color: #fff;
+  padding:30px;
+  font-size: 25px;
+  background-position: right;
+  border-bottom: 3px black solid;
+  line-height: 2.5em;
+}
+#main-header h1, #showcase h1{
+  margin: 0px;
+}
+#nav-bar{
+  background-image:url('images/back.jpg') ;
+  padding:1px;
+  background-position: center;
+  border-bottom: 3px solid black;
+  line-height: 2em;
+}
+#nav-bar li{
+  display: inline;
+  padding-right: 35px;
+}
+#nav-bar a{
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+#showcase{
+  background-image: url('images/sand.jpg');
+  min-height: 300px;
+  font-size: 45px;
+  color: white;
+  line-height: 3em;
+}
+#main{
+  float: left;
+  width: 80%;
+  box-sizing: border-box;
+  padding-right: 5px;
+  font-size: 20px;
+  line-height: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.side-bar{
+  background: #333;
+  color: white;
+  float: right;
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid black;
+  margin-top: 60px;
+
+}
+.clr{
+  clear: both;
+}
+.side-bar a{
+  text-decoration: none;
+  color: #ddd;
+}
+.side-bar ul{
+  list-style: square;
+}
+#main-footer{
+  font-size: 18px;
+  background: #555;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 1px;
+}
+@media(max-width:800px) {
+  #main{
+      float: none;
+      width: 100%;
+  }
+  .side-bar{
+    float: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+body{
+  background-color: #f4f4f4;
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+header{
+  background-color: #333;
+  color: white;
+}
+a{
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.branding{
+  float: left;
+}
+li{
+  display: inline;
+}
+ul{
+  float: right;
+}
+.clr{
+  clear: both;
+}
+#newsletter{
+  background-color: #333;
+  color: white;
+}
+#newsletter p{
+  float: left;
+}
+form{
+  float: right;
+  margin-top: 14px;
+}

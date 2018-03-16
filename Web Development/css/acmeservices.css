@@ -1,0 +1,257 @@
+body {
+  background: #eee;
+  margin: 0px;
+  font-family: arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#main-header {
+  background: #333;
+  color: white;
+  border-bottom: 3px red solid;
+}
+
+#main-header h1 {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+#main-header ul {
+  float: right;
+  width: 35%;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.clr {
+  clear: both;
+}
+
+#main-header li {
+  display: inline;
+  padding-left: 30px;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-header a span:hover {
+  text-shadow: 0.2px -0.2px 1px red;
+}
+
+#main-header a:hover {
+  text-shadow: 0.2px -0.2px 1px white;
+}
+
+#subscribe {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+#subscribe h3 {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+#subscribe input {
+  float: right;
+  width: 35%;
+  box-sizing: border-box;
+}
+
+#subscribe input[type="email"] {
+  padding: 10px;
+  border: 0px;
+}
+
+#subscribe input[type="email"]:hover {
+  box-shadow: 0.5px 0.5px 1px 0px white;
+}
+
+#subscribe input[type="submit"] {
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(255, 20, 0, 1);
+  outline: none;
+  color: white;
+  border: 0px;
+}
+
+#subscribe input[type="submit"]:hover {
+  box-shadow: 0.5px 0.5px 1px 0px red;
+}
+
+.site {
+  background: #ddd;
+  border: 2px solid lightgray;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.left {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.right {
+  float: right;
+  width: 22%;
+  box-sizing: border-box;
+}
+
+.side-bar {
+  background: #333;
+  color: white;
+  border: 2px solid black;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+label, textarea {
+  display: block;
+}
+
+label {
+  margin-top: 6px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 5px;
+}
+
+textarea {
+  padding-bottom: 12px;
+  padding-right: 15px;
+  padding-top: 1px;
+  padding-left: 7px;
+  margin-bottom: 6px;
+}
+
+input[type="submit"] {
+  background: rgba(255, 20, 0, 1);
+  color: white;
+  padding: 8px;
+  border: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main-footer {
+  padding: 10px;
+  background-color: rgb(255, 20, 0);
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media(max-width:1004px) {
+  #main-header h1 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  #main-header ul {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
+@media(max-width:798px) {
+  #main-header {
+    margin: auto;
+  }
+  #main-header h1 {
+    float: none;
+    width: 90%;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+  #main-header ul {
+    float: none;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 90%;
+    text-align: center;
+    padding-left: 0px;
+  }
+  #subscribe h3 {
+    float: none;
+    width: 90%;
+    text-align: center;
+  }
+  #subscribe input {
+    float: none;
+  }
+  #subscribe input[type="email"] {
+    width: 90%;
+  }
+  #subscribe input[type="submit"] {
+    width: 90%;
+    margin-top: 5px;
+  }
+}
+
+@media(max-width:361px) {
+  #main-header h1 {
+    float: none;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  #main-header ul {
+    float: none;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding-left: 0px;
+    margin-right: 0px;
+    font-size: 12px;
+  }
+  #subscribe h3 {
+    font-size: 16.6px;
+  }
+}
+
+@media(max-width:1038px) {
+  .left {
+    float: none;
+    width: 90%;
+  }
+  .right {
+    float: none;
+    width: 90%;
+  }
+  .side-bar h3 {
+    text-align: center;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: 95%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  textarea {
+    margin-bottom: 10px;
+  }
+  input[type="submit"] {
+    margin-bottom: 10px;
+    width: 95.3%;
+  }
+}

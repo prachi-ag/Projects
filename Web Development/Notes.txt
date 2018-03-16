@@ -1,0 +1,123 @@
+1. <strong></strong> is a semantic tag that is it added importance to the text where we have use the strong tag. By default strong tag BOLD the text, but we change this by using CSS.
+
+2. <em></em> is a semantic tag (em = emphasis) that is it added importance to the text where we have use the em tag. By default em tag ITALICS the text, but we change this by using CSS
+
+3. In link tag when we click on the link we get to the site we have mentioned and the site will be open on the same tab, this is good whenever we want to remain in the same site (like if we have link the HOME and when we click on the home we will go the home page of the website for this we don't need to open the HOME in another tab as this will open up lot of tabs in our browser which is not good). But if we want to go to external site like we have a sports website and there is link to go to google website so when we click on the link we will go to google.com and for the site owner he always want his user to remain at his site so he will use <a href="http://google.com" target="_blank"></a> this link will open up google.com in different tab.
+
+4. <header class="heading"></header> === class is the attribute name and heading is the attribute value.
+
+5. <br /> === This is an example of self closing tag. Now, in HTML5 we don't need to put forward slash in self closing tag that is <br> will also work.
+
+6. <hr> === this will create a horizontal line .
+
+7. <label></label> === it defines a label for an <input> element. It is a inline element. If the user clicks on the text within the <label> element, it toggles the control. The 'for' attribute of the <label> tag should be equal to the id attribute of the related <input> element to bind them together.
+
+8.      <input type="" name="" value="">
+      -----------------------------------
+  (i) type: what type of thing we want to write
+      eg:  ==> if we want to write some sort of text like name we will use type="text"
+           ==> if we want to write age, number we use type="number"
+           ==> if we want to mention d.o.b we use type="date"
+           ==> if we want to write email we use type="email"
+           ==> if we want to write password we use type="passsword"
+           ==> if we want to write message we use type="message"
+     it will add some property also like when we use type="password" it will automatically make the password dotted(hidden) when we write down the password..
+
+  (ii) name: has to do with server side programming
+
+  (iii) value: print on the screen what we have written in the value
+       eg:  ==> if we write <input type="text" name="user-name" value="name"> it will show name in the box that we see on the screen but we need to remove the text by using javascript which is not good so we now use placeholder.
+            ==> Remember value will show ,whatever we have written in it, only in <input> tag.
+            ==> in <select> tag if we write value="Male" it will not show up on the list, to show this we will write Male between the opening and closing tag.
+
+9. <button type="submit">Submit</button> VS <input type="submit" name="submit" value="Submit">
+  --------------------------------------   ----------------------------------------------------
+  (i) button: when we click on the button "submit-type" nothing happen, we will use javascript so that button "submit-type" works.
+
+  (ii) input-submit : when we click on the submit button then the form will get submitted to process.php as we have action="process.php"
+
+10.<textarea></textarea> === to write down message or comment we use textarea tag, it provides big box which is resizable...
+
+11. To get random text for paragraph write lorem and press tab, if you want specific no. of words write lorem100 and press tab it will print 100 words.
+
+12. <img src="" alt=""> === if for some reason image can't load then the text we have written in (alt="") will display...
+
+13.  <a href="image-path same as src"><img src="" alt=""></a> === now if we click on the image it will show us the full image ...
+
+14. <blockquote cite="www.ss.com"></blockquote> === it is use to write some sort of quotes. It has some by default margin. "cite=www.ss.com" is the source from where you have taken the quote.
+cite will not show up on the browser, to see it press Ctrl+u it will take you to page source of the file in the browser itself and there you can see the cite.
+
+15. Ctrl + u === to go the the page source of the file.
+
+16. <abbr title=""></abbr> === if you write CSS between the tags and write cascading style sheet in title, and when you hover over the CSS part on the browser you will see the full form in a box.
+
+17. <cite></cite> === a semantic tag use to tell the browser that the text inside is important and the browser will change the style of the font. By default it is Italic.
+
+18. <div style="margin-top:500px"></div> === it added 500px margin to the top of the div. "margin-top:500px" will not effect the content above it, it will take the content below it to 500px down.
+
+19. A SEMANTIC ELEMENT clearly describes its meaning to both the browser and the developer.
+   eg: header, footer, nav, article, section, aside, main, details
+
+20. <style></style> === put this in <head> element and then we can write css in html file.
+
+21. <meta name="" content=""> === syntax for description and keywords.
+
+22. <nav></nav> === put this where we have to do the navigation.
+
+23. <sub></sub> === subscript tag.
+
+24. <sup></sup> === superscript tag.
+
+25. <del></del> === line-through on the text.
+
+26. <ins></ins> === underline the text.
+
+27. <small></small> === size of the font get small.
+
+28. <dfn></dfn> === definition Tag (when you write a definition of something or anything and you want emphasis on a word then you use definition tag.
+
+29. 3 methods for adding CSS
+   ---------------------------
+  (i) Inline CSS : Directly in the HTML element (NO!)
+
+  (ii) Internal CSS : Using <style> tags within a single document
+
+  (iii) External CSS : Linking an external .css file (Best way!)
+
+30.  font-size: 16px;                                 EQUAL
+     font-family: Arial, helvetica, sans-serif;      ========      font: normal 16px Arial, helvetica, sans-serif;
+     font-weight: normal;
+
+31. line-height: 1.6 em === create 1.6em height between the  sentences. For line-height em is better as compared to px.
+
+32. For Responsive Design use '%' instead of 'px' in width and height.
+
+33.   *{
+       margin:0px;
+       padding:0px;
+       }
+    whatever we write inside * selector it will apply to each and every element present in the body. Eg: there is some by default margin and padding of <h1> but if we use asterisk and write margin and padding = 0px then it will make it 0px... and it will apply to every element of the body.
+
+34. text-transform: === we can change transform the text to uppercase, lowercase etc. by using text-transform...
+
+35. a:visited{} === if I click on the link and visited it once then the property we have written in a:visited{} will happen... Eg:  If the link color is red and we have a:visited{color:black} so when we click on the link and visit the page the color of the link will get changed from red to black.
+
+36. list-style: === we can change the bullet point by using list-style. Even we can put image by using "list-style-image: url(image)"...
+
+37. .form-group input[type="text"]{} === the property inside it will apply to input having type="text"...
+
+38: float : === left will take the element to the left and right will take it to the right. Put width in %age for Responsive Design.
+
+39. box-sizing: border-box === if you have done (38) thing then for 3 boxes we put width 33.33%, but if we add border and padding to the boxes then it will take one box the other line because then box will not be able to fit, to counter this problem we use "box-sizing: border-box" ...
+
+40. Positions in CSS === Relative, Static, Fixed, Sticky, Absolute
+
+41. If we create a div of class="p-box" and inside it put a heading lets say <h1>HELLO</h1> and put a border around the div and increase a width and height a little bit (Then it will look like a box having Hello inside it). Now the default position is Static in CSS. If we make the position of HELLO absolute and put top:200px then HELLO will move up as it will consider top:200px from the top most part of the page not where it is written (inside a element here it is div with class p-box). Now to change the things that is if we make top:200px to HELLO then it should consider it from where it has written (here, inside div), what we do , we make the parent position of h1 to relative (parent here is div with class p-box and child is h1) and now when we make the position of HELLO absolute and add top:200px it will move down 200px from where it has written...
+
+42. If we make the position of something (lets say button) to fixed  and add top:200px then the button will get stick to page and when we scroll down or up it will remain there and it will always be 200px down from the staring of webpage...
+
+43. background-image: url('') === This is used to add background image in a element where the property has been defined...
+
+44. Pseudo Class === If we have created a list and lets say in the list we have 10 items. Now to change the property of a list item without using class in <li>, we can use li:first-child{} in CSS and it will change the property of the first list-item, similarly li:last-child{} will change the property of the last list-item. To change the property of specific list item we use li:nth-child(6){}, it will change the property of 6th list-item. We can use li:nth-child(even){}, it will change the property of even items in the list...
+
+45.
