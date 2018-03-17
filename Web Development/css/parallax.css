@@ -104,5 +104,6 @@ span.text{
 @media(max-width:383px){
   .head, .end{
     font-size: 22px;
+    line-height: 2.1em;
   }
 }
