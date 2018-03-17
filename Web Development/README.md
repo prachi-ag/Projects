@@ -1,2 +1,2 @@
-# Projects
-Web-Dev Projects
+# Web-Dev Projects
+Languages used : HTML, CSS AND Javascript 
