@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+}
+.container{
+  background-color: #3a4444;
+  padding: 10px;
+}
+.box{
+  width: calc(33.33333% - 39px);
+  border: 2px solid lightgray;
+  padding: 15px;
+  color:#3a4444;
+  background-color: #e0e0d1;
+  line-height: 1.4em;
+  margin-right: 5px;
+}
+.box h1{
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  padding:5px;
+  color:#2db475;
+}
+.left{
+  float: left;
+}
+   /*Clearfix*/
+.container::after{
+  content:"";
+  display: table;
+  clear: both;
+}

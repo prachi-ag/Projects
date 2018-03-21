@@ -28,7 +28,7 @@
   (iii) value: print on the screen what we have written in the value
        eg:  ==> if we write <input type="text" name="user-name" value="name"> it will show name in the box that we see on the screen but we need to remove the text by using javascript which is not good so we now use placeholder.
             ==> Remember value will show ,whatever we have written in it, only in <input> tag.
-            ==> in <select> tag if we write value="Male" it will not show up on the list, to show this we will write Male between the opening and closing tag.
+            ==> in <select> tag if we write value="Male" it will not show up, to show this we will write Male between the opening and closing tag.
 
 9. <button type="submit">Submit</button> VS <input type="submit" name="submit" value="Submit">
   --------------------------------------   ----------------------------------------------------
@@ -47,7 +47,7 @@
 14. <blockquote cite="www.ss.com"></blockquote> === it is use to write some sort of quotes. It has some by default margin. "cite=www.ss.com" is the source from where you have taken the quote.
 cite will not show up on the browser, to see it press Ctrl+u it will take you to page source of the file in the browser itself and there you can see the cite.
 
-15. Ctrl + u === to go the the page source of the file.
+15. Ctrl + u === to go to the page source of the file.
 
 16. <abbr title=""></abbr> === if you write CSS between the tags and write cascading style sheet in title, and when you hover over the CSS part on the browser you will see the full form in a box.
 
@@ -120,4 +120,27 @@ cite will not show up on the browser, to see it press Ctrl+u it will take you to
 
 44. Pseudo Class === If we have created a list and lets say in the list we have 10 items. Now to change the property of a list item without using class in <li>, we can use li:first-child{} in CSS and it will change the property of the first list-item, similarly li:last-child{} will change the property of the last list-item. To change the property of specific list item we use li:nth-child(6){}, it will change the property of 6th list-item. We can use li:nth-child(even){}, it will change the property of even items in the list...
 
-45.
+45. Specificity
+  --------------
+  (i) *{} ===> 0 point
+  (ii) type selector ===> 1 point
+  (iii) classes ===> 10 points
+  (iv) id ===> 100 points
+  (v) inline-style ===> 1000 points
+  
+
+46. calc()  VS  box-sizing:border-box
+  -------------------------------------
+ Let's suppose the body width is 100% and you made three boxes and make them float left and set width equal to 33.33333%. If there is no padding, border, margin then the three boxes will set in one line. But if we apply lets say padding= 10px then it will add up to the width which will displace one box to other line. Basically, if width is 200px and border is 10px and padding is 20px and margin is 5px then the total width will be [200px + 20px + 40px + 10px = 270px].To counter this situation we use calc() and box-sizing:border-box. 
+
+  (i) calc ===> margin-right=10px, padding=10px, border=2px and width=33.33333%,the total width increases, so to solve this will subtract additional width of border,padding,margin from original width,
+         width: calc(33.33333% - 10px - 20px - 4px )
+                                  ^      ^      ^
+                                  |      |      |
+                  (margin-right)__|      |      |__(border = left + right)
+                                         |
+                            (padding = left + right)
+  
+  (ii) box-sizing:border-box ===> Do *{box-sizing:border-box} at the starting. Now if suppose the width is 200px and border is 10px and padding is 20px... box-sizing:border-box will not add the additional padding,border width to the original width, it has make the padding and border width to be a part of original width. But if we apply margin then whole scenario changes, box-sizing:border-box will not add margin width to the original width. So if you apply margin then you have to use calc() function.
+
+  So,if there is no margin then use box-sizing:border-box otherwise use calc(). 
