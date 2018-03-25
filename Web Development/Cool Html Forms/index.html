@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Styled Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>You Just Made The List!!</h1>
+  </header>
+
+  <form>
+    <p>You are a</p>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+
+   <p>Who is interested in...</p>
+   <input type="checkbox" name="interest" id="web">
+   <label for="web">Web Development</label><br>
+   <input type="checkbox" name="interest" id="math">
+   <label for="math">Mathematics</label><br>
+   <input type="checkbox" name="interest" id="cri">
+   <label for="cri">Cricket</label>
+
+   <fieldset>
+     <legend>Contact Info</legend>
+     <input type="email" placeholder="Email" required>
+     <span class="tick"></span>
+     <input type="telephone" placeholder="Phone Number" required>
+     <span class="tick"></span>
+   </fieldset>
+
+   <p>How would you like to be contacted?</p>
+   <select>
+     <option value="By Email">By Email</option>
+     <option value="By Telephone">By Telephone</option>
+   </select>
+
+   <input type="submit" name="sumbit" value="Become a Maniac">
+  </form>
+   
+</body>
+</html>
