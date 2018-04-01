@@ -174,7 +174,7 @@ header{
   padding-left: 24px;
 }
 
-@media (max-width: 880px){
+@media (max-width: 973px){
 
   .container{
     width: 90%;
@@ -193,7 +193,7 @@ header{
   }
 
   .content{
-    width: 90%;
+    width: 92%;
   }
 
   .tab:hover{
