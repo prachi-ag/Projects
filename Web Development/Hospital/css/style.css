@@ -1,0 +1,511 @@
+@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+}
+
+body{
+	font-family:'Open Sans', Arial, sans-serif;
+	width: 100%;
+	background: #f5f5f5;
+}
+
+@font-face{
+	font-family: 'Genericons';
+	src: url('../fonts/genericons-regular-webfont.woff')format('woff'),
+	url('../fonts/genericons-regular-webfont.eot')format('truetype');
+}
+
+/**************--First Nav bar--************/
+
+.sub-bar{
+	background: #02bcf5;
+	padding: 13px 0;
+}
+
+.container{
+	width: 90%;
+  margin: auto;
+}
+
+.social{
+	list-style: none;
+	float:left;
+	font-size: 0;
+}
+
+.social li{
+	display: inline-block;
+}
+
+.phone{
+	float: right;
+	padding-right:20px; 
+}
+
+.clr{
+	clear: both;
+	display: table;
+}
+
+.icon a:after{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	color: #444;
+	font: normal 16px 'Genericons';
+	padding-right: 24px;
+}
+
+.icon:hover a:after{
+	color: #222;
+	text-shadow: 0.3px 0.3px black;
+}
+
+.facebook a:after{
+	content: '\f204'
+}
+
+.twitter a:after{
+	content: '\f202'
+}
+
+.instagram a:after{
+	content: '\f209'
+}
+
+.youtube a:after{
+	content: '\f213'
+}
+
+.number:before{
+	content: '\f453'
+}
+
+.number:before{
+	font: normal 16px 'Genericons';
+	color: #222;
+	width: 20px;
+	height: 20px;
+}
+
+
+
+/**************--MAIN HEADER--*****************/
+
+header{
+ position: sticky;
+ top: 0;
+ background: #fdfdfd;
+}
+
+header h1{
+	float:left;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 600;
+	padding: 15px 0;
+}
+
+header h1:before{
+	content: url('../images/logo.png');
+	padding-right: 10px;
+}
+
+.main-bar{
+	float: right;
+}
+
+.main-bar li{
+	display: inline-block;
+	padding: 25.5px 20px;
+}
+
+.main-bar li a{
+	text-decoration: none;
+	color: #333;
+	text-transform: uppercase;
+	font-size:15px;
+	font-weight: 600;
+}
+
+.main-bar li:hover a{
+	color: #111;
+	text-shadow: 0.2px 0.2px black;
+}
+
+.main-bar li span{
+	color: white;
+	text-shadow: none;
+}
+
+/*****************--SHOWCASE--*****************/
+
+.showcase{
+	background: url('../images/rdoc2.jpg')no-repeat; 
+	height: 520px;
+}
+
+/****************--MAIN--*********************/
+
+.main{
+	background: #f5f5f5;
+	width: 100%;
+}
+
+.main1{
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	color: #333;
+	padding: 35px;
+}
+
+.main1 h1{
+	font-size: 2.3em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.main1 p{
+	font-size: 0.9em; 
+}
+
+.photos{
+	width: 90%;
+	margin: auto;
+}
+
+.photo{
+	display: inline-block;
+  width: calc(33% - 2%);
+	margin-left:2%;
+	box-shadow: 2px 2px 1px #ccc, -1px -0.5px 1px #ccc;
+	background: #fbfbfb;
+}
+
+.photo img{
+	width: 100%;
+	border-bottom: 1px solid #777;
+}
+
+.photo h1{
+	text-align: center;
+	font-weight: 600;
+
+}
+
+.photo p{
+	font-size: 0.81em;
+	padding: 10px 15px;
+	text-align: left;
+}
+
+.main2{
+	padding-top: 100px;
+}
+
+.img1{
+	background-image: url('../images/card.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.img2{
+	background-image: url('../images/rad.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.img3{
+	background-image: url('../images/den.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.light{
+	width: 90%;
+	margin: auto;
+	height: 215px;
+	color: #333;
+}
+
+.light h1{
+	text-align: center;
+	font-size: 2.2em;
+	font-weight: 600;
+	padding: 25px 0px 20px;
+	text-transform: uppercase;
+}
+
+.light p{
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+/*****************--FOOTER--******************/
+
+footer{
+	background: #1e1e1e;
+	color: #aaa;
+	padding: 20px 0;
+}
+
+.floater{
+	float:right;
+}
+
+.floater a::after{
+	color: #aaa;
+}
+
+.floater .icon:hover a:after{
+	color: #eee;
+}
+
+footer p{
+	font-weight: 100;
+	float: left;
+	font-size: 0.9em;
+}
+
+footer span{
+	color: #eee;
+}
+
+.button{
+	font-size: 0;
+}
+
+.button:after{
+	content: '\f500';
+	color: #02bcf5 !important; 
+}
+
+.button:after{
+	font: normal 18px 'Genericons';
+	padding-left: 30px;
+}
+
+/***********--ABOUT US--*********/
+
+.about-us{
+	text-align: center;
+	background: #02bcf5;
+	color: #333;
+	padding: 10px 0;
+}
+
+.about-us h1{
+	font-weight: 600;
+}
+
+.wrapper{
+	margin: auto;
+	width: 90%;
+}
+
+img.hospital{
+	margin-top: 40px;
+	float: left;
+	margin-right: 70px;
+	box-shadow: 3px 2px 2px #aaa;
+}
+
+.description{
+	padding-top: 90px;
+
+}
+
+.description h2{
+	font-weight: 600;
+	color:#333;
+	margin-bottom: 35px;
+}
+
+.description p{
+	font-size: 0.95em;
+	text-align: left;
+}
+
+.team{
+	margin:50px 0px;
+}
+
+.team h2{
+	text-align: center;
+	padding: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.doctor h3, .doctor p{
+	text-align: center;
+	padding-right: 75px;
+}
+
+.doctor{
+	width: 33%;
+	display: inline-block;
+	padding-left: 50px;
+	margin-bottom: 20px;
+}
+
+.doctor img{
+	box-shadow: 2px 2px 1px #ccc, -1px -0.5px 1px #ccc;
+	margin-bottom: 8px;
+}
+
+/*****************--SERVICES--*****************/
+
+.services h2{
+	font-weight: 600;
+	margin: 35px 0px;
+	color: #333;
+}
+
+.services h2 span{
+	color: #02bcf5;
+}
+
+.services p{
+	font-size: 0.94em;
+	line-height: 1.5em;
+	color: #333;
+}
+
+.gap{
+	height:60px;
+}
+
+/*************--CONTACT--***************/
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="date"]{
+	background: #f5f5f5;
+	border: none;
+	outline: none;
+	width: 40%;
+	margin: 40px 90px 10px 0px;
+	border-bottom: 1px solid #888;
+	padding: 10px 0px;
+	font-size: 1em;
+}
+
+input[type='submit']{
+		margin-left: 39.5%;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		padding: 12px 28px;
+		font-size: 1em;
+		font-weight: 600;
+		color: white;
+		background: #0fa3d0;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		cursor: pointer;
+		box-shadow: 1.2px 1.2px 1px #aaa;
+}
+
+input[type='submit']:hover{
+	background: #138fb5;
+}
+
+/*****************--LOGIN--*****************/
+
+button{
+	margin-left: 39.5%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 12px 28px;
+	font-size: 1em;
+	font-weight: 600;
+	color: white;
+	background: #0fa3d0;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: 1.2px 1.2px 1px #aaa;
+}
+
+button:hover{
+	background: #138fb5;
+}
+
+.sign{
+	border: 1px solid rgba(150,150,150,0.9);
+	width:50%;
+	margin: 40px auto;
+	padding: 20px 0px 0px;
+	box-shadow: 3px 5px 0.2px #ccc, -3px 0px 0.2px #ccc;
+}
+
+.sign h2{
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: 600;
+}
+
+.sign input{
+	background: #f5f5f5;
+	border: none;
+	outline: none;
+	display: block;
+	width: 90%;
+	margin: 40px auto 0px;
+	border: 1px solid #888;
+	padding: 15px 10px;
+	font-size: 1.2em;
+}
+
+.sign input:focus{
+	border:  1px solid #0d90b8;
+}
+
+.sign span{
+	color: #02bcf5;
+}
+
+.sign a{
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 0.87em;
+	color: #1474bd;
+}
+
+
+.ist{
+	width: 33%;
+	display: inline-block;
+	padding-left:80px; 
+}
+
+.ist h2{
+	text-transform: uppercase;
+	margin: 12px 0px 20px;
+	border-bottom: 1px solid #1474bd;
+	padding: 5px 0px 10px;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+.ist li{
+	list-style: none;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
+.ist li:last-child{
+	margin-bottom: 30px;
+}
+

@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  background: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+   font-family: "Genericons";
+   src: url('../fonts/genericons-regular-webfont.woff')format('woff'),
+   url('../fonts/genericons-regular-webfont.eot')format('truetype');
+}
+
+.container{
+  width: 90%;
+  margin: 30px auto;
+}
+
+header{
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.4rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.accordion{
+  width: 100%;
+  background: #333;
+  height: 200px;
+
+  overflow: hidden;
+  display: block;
+  list-style-type: none;
+}
+
+.tab{
+  display: inline-block;
+  height: 200px;
+  width: 80px;
+  background: #444;
+  overflow: hidden;
+  transition: all 500ms ease-in-out 100ms;
+  position: relative;
+  font-size: 0;
+}
+
+.tab:hover{
+  width: 450px;
+}
+
+.content{
+  background: white;
+  width: 370px;
+  height: 200px;
+  margin-left: 80px;
+  padding: 45px 10px 10px 15px;
+  position: relative;
+}
+
+.content h1{
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.content p{
+  font-size: 0.9rem;
+}
+
+.icon a:before,
+.icon a:after{
+  width: 80px;
+  position: absolute;
+  height: 200px;
+  color: white;
+
+  display: block;
+
+  transition: all 400ms ease-in-out 100ms;
+}
+
+.github a:before,
+.github a:after{
+   content: "\f200"
+}
+
+.github a:after{
+  background: #6e5494;
+
+  margin-left: 80px;
+}
+
+.github a:before{
+  background: limegreen;
+}
+
+.tab:hover a:before{
+  margin-left: -95px;
+}
+
+.tab:hover a:after{
+  margin-left: -1px;
+}
+
+
+@media (max-width: 973px){
+
+  .container{
+    width: 90%;
+  }
+  .accordion{
+    width: 100%;
+    display: block;
+    height: auto;
+
+  }
+
+  .tab{
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #222;
+  }
+
+  .content{
+    width:91%;
+  }
+
+  .tab:hover{
+    width: 100%;
+  }
+}

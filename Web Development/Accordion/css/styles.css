@@ -1,3 +1,15 @@
+/* We have used min-width for accordion, because of two reasons:
+ (i) If we hover on the tab and if suppose after hover the content width surpass the accordion width than because of
+   min-width accordion will automatically adjust its size but since we have use overflow hidden then the tab:hover size
+  will decrease.
+
+(ii) I have only give min-width at the last so that accordion does not get smaller than 350px as it will decrease the 
+   size of the content and it will look awkward.
+   
+(iii) Overflow hidden for accordion because when the content width become 91% after applying media querie and if we 
+   decrease the size of the browser the .accordion size decreases but the content comes out of the accordion so to hide
+  that part we have used it and there are some other reasons also like for a:before and a:after to hide etc...   */
+
 *{
   margin: 0;
   padding: 0;
@@ -36,7 +48,6 @@ header{
   width: 100%;
   background: #333;
   height: 200px;
-  min-width: 800px;
   overflow: hidden;
   display: block;
   list-style-type: none;
@@ -89,11 +100,12 @@ header{
 }
 
 .icon a:after{
-   margin-left: 80px;
+   margin-left: 80px; /*a:before and a:after are placed above each other, a:before is below and a:after is above so when
+   margin-left:80px, a:after move right hand side by 80px hence a:before is now visible */
 }
 
 .tab:hover .icon a:before{
-   margin-left: -90px;
+   margin-left: -80px;
 }
 
 .tab:hover .icon a:after{
@@ -183,7 +195,6 @@ header{
     width: 100%;
     display: block;
     height: auto;
-    min-width: 450px;
   }
 
   .tab{
@@ -209,5 +220,9 @@ header{
   .accordion{
     width: 100%;
     min-width: 350px;
+  }
+
+  .content{
+    padding-right: 45px;
   }
 }
