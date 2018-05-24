@@ -1,0 +1,9 @@
+.redGiant{
+    color: red;
+    font-size: 60px;
+    font-family: "helvetica";
+}
+
+.on{
+    background-color: yellow;
+}
