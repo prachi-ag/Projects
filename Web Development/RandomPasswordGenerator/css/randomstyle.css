@@ -1,0 +1,89 @@
+body
+{
+background: rgba(125,158,189,0.82);
+background: -moz-radial-gradient(center, ellipse cover, rgba(125,158,189,0.82) 0%, rgba(30,39,48,0.96) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(125,158,189,0.82)), color-stop(100%, rgba(30,39,48,0.96)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(125,158,189,0.82) 0%, rgba(30,39,48,0.96) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(125,158,189,0.82) 0%, rgba(30,39,48,0.96) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(125,158,189,0.82) 0%, rgba(30,39,48,0.96) 100%);
+background: radial-gradient(ellipse at center, rgba(125,158,189,0.82) 0%, rgba(30,39,48,0.96) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d9ebd', endColorstr='#1e2730', GradientType=1 );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 3em;
+}
+ 
+.out{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #788d92;
+    border: solid 2px #788d92;
+    
+    
+}
+.pass{
+    float: left;
+    font-size: 30px;
+    width: 300px;
+    margin-left: 0;
+    padding: 0;
+    background-color: #3d575e;
+    margin-top: 5px;
+    color: antiquewhite;
+    padding-right: 150px;
+    border-radius: 5px;
+
+    
+}
+.myBtn{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.in{
+    width:50px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    margin: 0;
+    float: right;
+    padding: 6px;
+    background-color:#3d575e;
+    margin-top: 5px;
+    color: antiquewhite;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
